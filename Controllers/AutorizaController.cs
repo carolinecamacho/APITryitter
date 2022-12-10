@@ -93,6 +93,4 @@ namespace APITryitter.Controllers
         };
     }
   }
-    }
-
 }
