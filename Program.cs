@@ -33,24 +33,22 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
         .AddEntityFrameworkStores<AppDbContext>()
         .AddDefaultTokenProviders();
 
-builder.Services.AddSingleton<ITokenService>(new TokenService());
-
 builder.Services.AddAuthentication
                 (JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
+                  options.TokenValidationParameters = new TokenValidationParameters
+                  {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
 
-                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                        ValidAudience = builder.Configuration["Jwt:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey
-                        (Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-                    };
+                    ValidIssuer = builder.Configuration["TokenConfiguration:Issuer"],
+                    ValidAudience = builder.Configuration["TokenConfiguration:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey
+                      (Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
+                  };
                 });
 builder.Services.AddAuthorization();
 
@@ -59,8 +57,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+  app.UseSwagger();
+  app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

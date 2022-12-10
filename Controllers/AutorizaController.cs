@@ -2,6 +2,11 @@ using APITryitter.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace APITryitter.Controllers
 {
@@ -11,11 +16,13 @@ namespace APITryitter.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly IConfiguration _configuration;
         public AutorizaController(UserManager<IdentityUser> userManager,
-        SignInManager<IdentityUser> signInManager)
+        SignInManager<IdentityUser> signInManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _configuration = configuration;
         }
         [HttpGet]
         public ActionResult<string> Get()
@@ -58,5 +65,34 @@ namespace APITryitter.Controllers
                 return BadRequest(ModelState);
             }
         }
-        }
+    public UsuarioToken GeraToken(UserModel user)
+    {
+      var claims = new[]
+      {
+        new Claim(JwtRegisteredClaimNames.UniqueName, user.Email),
+        new Claim(ClaimTypes.NameIdentifier, Guid.NewGuid().ToString())
+      };
+      var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]));
+      var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+      var expiracao = _configuration["TokenConfiguration:ExpireHours"];
+      var expiration = DateTime.UtcNow.AddHours(double.Parse(expiracao));
+
+      JwtSecurityToken token = new JwtSecurityToken(
+        issuer: _configuration["TokenConfiguration:Issuer"],
+        audience: _configuration["TokenConfiguration:Audience"],
+        claims: claims,
+        expires : expiration,
+        signingCredentials : credentials);
+
+    return new UsuarioToken()
+        {
+            Authenticated = true,
+            Token = new JwtSecurityTokenHandler().WriteToken(token),
+            Expiration = expiration,
+            Message = "Token JWT OK"
+        };
+    }
+  }
+    }
+
 }
