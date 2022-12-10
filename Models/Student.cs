@@ -11,10 +11,10 @@ public class Student
         Posts = new Collection<Post>();
     }
     public int StudentId { get; set; }
-    [Required]
+    [Required(ErrorMessage = "O nome é obrigatório")]
     [StringLength(80)]
     public string? Name { get; set; }
-    [Required]
+    [Required(ErrorMessage = "O email é obrigatório")]
     [StringLength(80)]
     public string? Email { get; set; }
     [Required]
