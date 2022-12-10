@@ -13,5 +13,6 @@ namespace APITryitter.Context
 
         public DbSet<Student>? Students { get; set; }
         public DbSet<Post>? Posts { get; set; }
+        public DbSet<UserModel>? UserModel { get; set; }
     }
 }

@@ -128,3 +128,4 @@ C:/Users/Caroline/source/repos/APITryitter/bin/Debug/net6.0/runtimes/win/lib/net
 /home/ingrid/XP/Aceleracao-C#/projeto-final-2/APITryitter/obj/Debug/net6.0/APITryitter.csproj.CopyComplete
 /home/ingrid/XP/Aceleracao-C#/projeto-final-2/APITryitter/obj/Debug/net6.0/APITryitter.genruntimeconfig.cache
 /home/ingrid/XP/Aceleracao-C#/projeto-final-2/APITryitter/obj/Debug/net6.0/ref/APITryitter.dll
+/home/ingrid/XP/Aceleracao-C#/projeto-final-2/APITryitter/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
