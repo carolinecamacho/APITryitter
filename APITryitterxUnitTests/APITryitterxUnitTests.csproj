@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\APICatalogo\APITryitter.csproj" />
+    <ProjectReference Include="..\APITryitter\APITryitter.csproj" />
   </ItemGroup>
 
 </Project>

@@ -19,7 +19,7 @@ namespace APITryitterxUnitTests;
         public static DbContextOptions<AppDbContext> dbContextOptions { get; }
 
         public static string connectionString =
-           "Server=localhost;DataBase=TryitterDB;Uid=root;Pwd=123456";
+           "Server=localhost;DataBase=TryitterDBTest;Uid=root;Pwd=123456";
 
         static StudentsUnitTestController()
         {
@@ -39,10 +39,10 @@ namespace APITryitterxUnitTests;
 
             var context = new AppDbContext(dbContextOptions);
 
-            //DBUnitTestsMockInitializer db = new DBUnitTestsMockInitializer();
-            // db.Seed(context);
+            DBUnitTestsMockInitializer db = new DBUnitTestsMockInitializer();
+            db.Seed(context);
 
-            repository = new UnitOfWork(context);
+            //repository = new UnitOfWork(context);
         }
 
         //=======================================================================
@@ -57,6 +57,7 @@ namespace APITryitterxUnitTests;
 
             //Act  
             var data = controller.Get(1);
+            Console.WriteLine(data);
 
             //Assert  
             Assert.IsType<List<StudentDTO>>(data);
