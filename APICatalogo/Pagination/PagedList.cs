@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace APICatalogo.Pagination;
+namespace APITryitter.Pagination;
 
 public class PagedList<T> : List<T>
 {

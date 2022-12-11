@@ -1,7 +1,7 @@
-﻿using APICatalogo.Models;
+﻿using APITryitter.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace APICatalogo.DTOs;
+namespace APITryitter.DTOs;
 
 public class StudentDTO
 {
@@ -10,6 +10,5 @@ public class StudentDTO
     public string? Email { get; set; }
     public string? Modulo { get; set; }
     public string? Status { get; set; }
-    public string? Password { get; set; }
-    public ICollection<Post>? Posts { get; }
+    //public ICollection<PostDTO> Posts { get; set; }
 }

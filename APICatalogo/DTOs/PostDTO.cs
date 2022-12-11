@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace APICatalogo.DTOs;
+namespace APITryitter.DTOs;
 
 public class PostDTO
 {

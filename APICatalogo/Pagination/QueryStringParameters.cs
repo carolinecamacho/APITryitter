@@ -1,4 +1,4 @@
-﻿namespace APICatalogo.Pagination;
+﻿namespace APITryitter.Pagination;
 
 public class QueryStringParameters
 {

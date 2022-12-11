@@ -1,10 +1,10 @@
-﻿using APICatalogo.Context;
-using APICatalogo.Models;
-using APICatalogo.Pagination;
+﻿using APITryitter.Context;
+using APITryitter.Models;
+using APITryitter.Pagination;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace APICatalogo.Repository
+namespace APITryitter.Repository
 {
     public class StudentRepository : Repository<Student>, IStudentRepository
     {
@@ -12,12 +12,12 @@ namespace APICatalogo.Repository
         {
         }
 
-        //public async Task<PagedList<Student>> GetStudents(StudentsParameters studentParameters)
-        //{
-        //    return await PagedList<Student>.ToPagedList(Get().OrderBy(on => on.Nome),
-        //                       studentParameters.PageNumber,
-        //                       studentParameters.PageSize);
-        //}
+        public async Task<PagedList<Student>> GetStudents(StudentsParameters studentParameters)
+        {
+            return await PagedList<Student>.ToPagedList(Get().OrderBy(on => on.Name),
+                               studentParameters.PageNumber,
+                               studentParameters.PageSize);
+        }
 
         public async Task<IEnumerable<Student>> GetStudentsPosts()
         {

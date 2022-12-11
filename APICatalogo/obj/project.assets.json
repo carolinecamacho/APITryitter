@@ -10386,9 +10386,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
-      "projectName": "APICatalogo",
-      "projectPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+      "projectUniqueName": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APITryitter.csproj",
+      "projectName": "APITryitter",
+      "projectPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APITryitter.csproj",
       "packagesPath": "C:\\Users\\Caroline\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\obj\\",
       "projectStyle": "PackageReference",

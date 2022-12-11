@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7OSi08mQ9AjK2oO3xBRhBRNozytARDByvSy+KMZIJUS7sLctiUHBt+xIIfH1zUnehRH8d+gRvIRmOhLphIpHXQ==",
+  "dgSpecHash": "tqB85cCMJ+CDamfqa3zm78evBQpZviXBSSkc04UupeVOJopGQq8f2cTpij2JZfzCvpVvkYy+yWY3eedc2mjsVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
+  "projectFilePath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APICatalogo\\APITryitter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Caroline\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

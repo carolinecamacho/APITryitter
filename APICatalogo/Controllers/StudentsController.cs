@@ -1,13 +1,13 @@
-﻿using APICatalogo.DTOs;
-using APICatalogo.Models;
-using APICatalogo.Pagination;
-using APICatalogo.Repository;
+﻿using APITryitter.DTOs;
+using APITryitter.Models;
+using APITryitter.Pagination;
+using APITryitter.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
-namespace APICatalogo.Controllers
+namespace APITryitter.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
@@ -23,41 +23,41 @@ namespace APICatalogo.Controllers
         }
 
         [HttpGet("posts")]
-        public async Task<ActionResult<IEnumerable<StudentDTO>>> GetStudentsPosts()
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsPosts()
         {
             var students = await _context.StudentRepository
                             .GetStudentsPosts();
 
-            var studentsDto = _mapper.Map<List<StudentDTO>>(students);
+            var studentsDto = _mapper.Map<List<Student>>(students);
             return studentsDto;
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<StudentDTO>>>
-        //    Get([FromQuery] StudentsParameters studentsParameters)
-        //{
-        //    var students = await _context.StudentRepository.
-        //                        GetStudents(studentsParameters);
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<StudentDTO>>>
+            Get([FromQuery] StudentsParameters studentsParameters)
+        {
+            var students = await _context.StudentRepository.
+                                GetStudents(studentsParameters);
 
-        //    var metadata = new
-        //    {
-        //        students.TotalCount,
-        //        students.PageSize,
-        //        students.CurrentPage,
-        //        students.TotalPages,
-        //        students.HasNext,
-        //        students.HasPrevious
-        //    };
+            var metadata = new
+            {
+                students.TotalCount,
+                students.PageSize,
+                students.CurrentPage,
+                students.TotalPages,
+                students.HasNext,
+                students.HasPrevious
+            };
 
-        //    Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+           Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
 
-        //    var studentsDto = _mapper.Map<List<StudentDTO>>(students);
-        //    return studentsDto;
-        //}
+           var studentsDto = _mapper.Map<List<StudentDTO>>(students);
+           return studentsDto;
+       }
 
         [HttpGet("{id}", Name = "ObterStudent")]
         //[EnableCors("PermitirApiRequest")]
-        public async Task<ActionResult<Student>> Get(int id)
+        public async Task<ActionResult<StudentDTO>> Get(int id)
         {
             var student = await _context.StudentRepository
                              .GetById(p => p.StudentId == id);
@@ -66,18 +66,19 @@ namespace APICatalogo.Controllers
             {
                 return NotFound();
             }
-            return student;
+            var studentDTO = _mapper.Map<StudentDTO>(student);
+            return studentDTO;
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] StudentDTO studentDto)
+        public async Task<ActionResult> Post([FromBody] Student studentDto)
         {
             var student = _mapper.Map<Student>(studentDto);
 
             _context.StudentRepository.Add(student);
             await _context.Commit();
 
-            var studentDTO = _mapper.Map<StudentDTO>(student);
+            var studentDTO = _mapper.Map<Student>(student);
 
             return new CreatedAtRouteResult("ObterStudent",
                 new { id = student.StudentId }, studentDTO);

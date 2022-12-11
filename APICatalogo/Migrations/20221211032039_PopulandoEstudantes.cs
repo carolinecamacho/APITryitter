@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace APICatalogo.Migrations
+namespace APITryitter.Migrations
 {
     public partial class PopulandoEstudantes : Migration
     {

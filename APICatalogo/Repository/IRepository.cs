@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace APICatalogo.Repository
+namespace APITryitter.Repository
 {
     public interface IRepository<T>
     {

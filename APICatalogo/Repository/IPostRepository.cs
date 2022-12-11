@@ -1,7 +1,7 @@
-﻿using APICatalogo.Models;
-using APICatalogo.Pagination;
+﻿using APITryitter.Models;
+using APITryitter.Pagination;
 
-namespace APICatalogo.Repository;
+namespace APITryitter.Repository;
 
 public interface IPostRepository : IRepository<Post>
 {

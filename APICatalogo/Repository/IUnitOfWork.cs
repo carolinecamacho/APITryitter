@@ -1,4 +1,4 @@
-﻿namespace APICatalogo.Repository
+﻿namespace APITryitter.Repository
 {
     public interface IUnitOfWork
     {

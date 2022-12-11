@@ -1,8 +1,8 @@
-﻿using APICatalogo.Context;
+﻿using APITryitter.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace APICatalogo.Repository
+namespace APITryitter.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

@@ -1,9 +1,9 @@
-﻿using APICatalogo.Context;
-using APICatalogo.Models;
-using APICatalogo.Pagination;
+﻿using APITryitter.Context;
+using APITryitter.Models;
+using APITryitter.Pagination;
 using Microsoft.EntityFrameworkCore;
 
-namespace APICatalogo.Repository;
+namespace APITryitter.Repository;
 
 public class PostRepository : Repository<Post>, IPostRepository
 {

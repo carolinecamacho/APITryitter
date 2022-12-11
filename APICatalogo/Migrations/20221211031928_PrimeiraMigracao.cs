@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace APICatalogo.Migrations
+namespace APITryitter.Migrations
 {
     public partial class PrimeiraMigracao : Migration
     {

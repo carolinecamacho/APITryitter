@@ -1,7 +1,7 @@
-﻿using APICatalogo.Models;
+﻿using APITryitter.Models;
 using AutoMapper;
 
-namespace APICatalogo.DTOs.Mappings
+namespace APITryitter.DTOs.Mappings
 {
     public class MappingProfile : Profile
     {

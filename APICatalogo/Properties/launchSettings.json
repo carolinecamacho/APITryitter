@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "APICatalogo": {
+    "APITryitter": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

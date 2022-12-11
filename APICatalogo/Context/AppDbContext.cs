@@ -1,8 +1,8 @@
-﻿using APICatalogo.Models;
+﻿using APITryitter.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace APICatalogo.Context
+namespace APITryitter.Context
 {
     public class AppDbContext : IdentityDbContext
     {

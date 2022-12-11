@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace APICatalogo.Models
+namespace APITryitter.Models
 {
     [Table("Posts")]
     public class Post

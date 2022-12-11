@@ -1,4 +1,4 @@
-﻿namespace APICatalogo.DTOs;
+﻿namespace APITryitter.DTOs;
 
 public class UsuarioDTO
 {

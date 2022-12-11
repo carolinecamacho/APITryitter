@@ -1,11 +1,11 @@
-﻿using APICatalogo.DTOs;
-using APICatalogo.Models;
-using APICatalogo.Repository;
+﻿using APITryitter.DTOs;
+using APITryitter.Models;
+using APITryitter.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace APICatalogo.Controllers
+namespace APITryitter.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]

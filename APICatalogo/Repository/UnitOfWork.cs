@@ -1,6 +1,6 @@
-﻿using APICatalogo.Context;
+﻿using APITryitter.Context;
 
-namespace APICatalogo.Repository
+namespace APITryitter.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {

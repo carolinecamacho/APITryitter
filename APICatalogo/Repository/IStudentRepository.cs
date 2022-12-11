@@ -1,10 +1,10 @@
-﻿using APICatalogo.Models;
-using APICatalogo.Pagination;
+﻿using APITryitter.Models;
+using APITryitter.Pagination;
 
-namespace APICatalogo.Repository;
+namespace APITryitter.Repository;
 
 public interface IStudentRepository : IRepository<Student>
 {
-    //Task<PagedList<Student>> GetStudents(StudentsParameters studentParameters);
+    Task<PagedList<Student>> GetStudents(StudentsParameters studentParameters);
     Task<IEnumerable<Student>> GetStudentsPosts();
 }

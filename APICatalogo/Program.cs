@@ -1,6 +1,6 @@
-using APICatalogo.Context;
-using APICatalogo.DTOs.Mappings;
-using APICatalogo.Repository;
+using APITryitter.Context;
+using APITryitter.DTOs.Mappings;
+using APITryitter.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
