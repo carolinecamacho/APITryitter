@@ -7,19 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20220320170109_%27MigracaoInicial%27.cs" />
-    <Compile Remove="Migrations\20220320170109_%27MigracaoInicial%27.Designer.cs" />
-    <Compile Remove="Migrations\20220320220108_AjusteTabelas.cs" />
-    <Compile Remove="Migrations\20220320220108_AjusteTabelas.Designer.cs" />
-    <Compile Remove="Migrations\20220321143540_PopulaCategorias.cs" />
-    <Compile Remove="Migrations\20220321143540_PopulaCategorias.Designer.cs" />
-    <Compile Remove="Migrations\20220321151336_PopulaProdutos.cs" />
-    <Compile Remove="Migrations\20220321151336_PopulaProdutos.Designer.cs" />
-    <Compile Remove="Migrations\20221211022448_Idetity.cs" />
-    <Compile Remove="Migrations\20221211022448_Idetity.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
