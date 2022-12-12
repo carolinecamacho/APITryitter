@@ -19,7 +19,7 @@ namespace APITryitterxUnitTests;
         public static DbContextOptions<AppDbContext> dbContextOptions { get; }
 
         public static string connectionString =
-           "Server=localhost;DataBase=TryitterDB;Uid=ingridrcs;Pwd=In121091!";
+           "Server=localhost;DataBase=TryitterDB;Uid=root;Pwd=123456";
 
         static StudentsUnitTestController()
         {
