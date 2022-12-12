@@ -3,12 +3,14 @@ using APITryitter.Models;
 using APITryitter.Pagination;
 using APITryitter.Repository;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace APITryitter.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api/[Controller]")]
     [ApiController]
     //[EnableCors("PermitirApiRequest")]
@@ -23,12 +25,12 @@ namespace APITryitter.Controllers
         }
 
         [HttpGet("posts")]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsPosts()
+        public async Task<ActionResult<IEnumerable<StudentDTO>>> GetStudentsPosts()
         {
             var students = await _context.StudentRepository
                             .GetStudentsPosts();
 
-            var studentsDto = _mapper.Map<List<Student>>(students);
+            var studentsDto = _mapper.Map<List<StudentDTO>>(students);
             return studentsDto;
         }
 

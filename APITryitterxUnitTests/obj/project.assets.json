@@ -7892,6 +7892,7 @@
       "path": "system.composition.attributedmodel/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.AttributedModel.dll",
@@ -7921,6 +7922,7 @@
       "path": "system.composition.hosting/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Hosting.dll",
@@ -11506,41 +11508,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Caroline\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/ingrid/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APITryitterxUnitTests\\APITryitterxUnitTests.csproj",
+      "projectUniqueName": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitterxUnitTests/APITryitterxUnitTests.csproj",
       "projectName": "APITryitterxUnitTests",
-      "projectPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APITryitterxUnitTests\\APITryitterxUnitTests.csproj",
-      "packagesPath": "C:\\Users\\Caroline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APITryitterxUnitTests\\obj\\",
+      "projectPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitterxUnitTests/APITryitterxUnitTests.csproj",
+      "packagesPath": "/home/ingrid/.nuget/packages/",
+      "outputPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitterxUnitTests/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Caroline\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ingrid/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APITryitter\\APITryitter.csproj": {
-              "projectPath": "C:\\Users\\Caroline\\Downloads\\13_CORS_NET6 (1)\\12_CORS_NET6\\APICatalogo\\APITryitter\\APITryitter.csproj"
+            "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/APITryitter.csproj": {
+              "projectPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/APITryitter.csproj"
             }
           }
         }
@@ -11596,7 +11589,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
