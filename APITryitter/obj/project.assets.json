@@ -10384,11 +10384,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/APITryitter.csproj",
+      "projectUniqueName": "/home/ingrid/XP/Aceleracao-C#/projeto-final-4/APITryitter/APITryitter/APITryitter.csproj",
       "projectName": "APITryitter",
-      "projectPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/APITryitter.csproj",
+      "projectPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-4/APITryitter/APITryitter/APITryitter.csproj",
       "packagesPath": "/home/ingrid/.nuget/packages/",
-      "outputPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/obj/",
+      "outputPath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-4/APITryitter/APITryitter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ingrid/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WO7e0y5zfhffa/ZSYZ2CAYTjXKLwOuoWG+gd1+frfG8krII51UNoR9GYLpY5kFyb2JP+fT/kn2ctp9wOlJfI6Q==",
+  "dgSpecHash": "2I3LFBjr2aXYp4/m6/pfEFYbTTlst0WAA/zw8JyZM/+CQcvFT/VlLlbdDny1zhpk+kqzfg7lPbqQ3dnqM1mGkw==",
   "success": true,
-  "projectFilePath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-3/APITryitter/APITryitter/APITryitter.csproj",
+  "projectFilePath": "/home/ingrid/XP/Aceleracao-C#/projeto-final-4/APITryitter/APITryitter/APITryitter.csproj",
   "expectedPackageFiles": [
     "/home/ingrid/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/home/ingrid/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
