@@ -1,4 +1,4 @@
-# Boas Vindas ao repositório do Tryitter !
+# Boas Vindas ao repositório do Tryitter !!
 
 O Tryitter é uma rede social que proporciona um ambiente em que as pessoas estudantes poderão, por meio de textos e imagens, compartilhar suas experiências e também acessar posts que possam contribuir para seu aprendizado.
 
@@ -15,3 +15,5 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 3. Alterar um post depois de publicado.
 
 # Tecnologias Utilizadas
+
+#
