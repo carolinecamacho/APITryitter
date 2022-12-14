@@ -14,7 +14,7 @@ Uma pessoa estudante deve poder tamb√©m publicar posts em seu perfil, que poder√
 2. Implementar um C.R.U.D. para um post de uma pessoa estudante;
 3. Alterar um post depois de publicado.
 
-# Tecnologias Utilizadas :laptop: 
+# Tecnologias Utilizadas :hammer_and_wrench:
 
 1. C#, MySql e Azure;
 
