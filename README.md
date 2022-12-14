@@ -8,20 +8,20 @@ As pessoas estudantes devem conseguir se cadastrar com nome, e-mail, módulo atu
 
 Uma pessoa estudante deve poder também publicar posts em seu perfil, que poderão conter texto com até 300 caracteres e arquivos de imagem, além de conseguir pesquisar outras contas por nome e optar por listar todos seus posts ou apenas o último.
 
-# Funcionalidades 
+# Funcionalidades :books:
 
 1. Implementar um C.R.U.D. para as contas de pessoas estudantes;
 2. Implementar um C.R.U.D. para um post de uma pessoa estudante;
 3. Alterar um post depois de publicado.
 
-# Tecnologias Utilizadas
+# Tecnologias Utilizadas :laptop: 
 
 1. C#, MySql e Azure;
 
-# Resultado
+# Resultado :trophy:
 ![projetoFINAL](https://user-images.githubusercontent.com/88983638/207453299-2777d8df-ef67-4e29-80d8-94fdffc2b6b1.png)
 
-# Primeiros Passos
+# Primeiros Passos :globe_with_meridians:
 
 # 1. Registro
 
@@ -36,13 +36,13 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 
 ![baerer](https://user-images.githubusercontent.com/88983638/207469498-30163cec-0cf4-43bf-b85e-e797b1457f5c.png)
 
-# Testes
+# Testes :desktop_computer:
 
 1. Utilização dos frameworks xUnit e FluentAssertions para criação dos testes
 
 ![testees](https://user-images.githubusercontent.com/88983638/207482456-6118cd1e-f017-485d-bc57-dfa68a89afdc.png)
 
-# Vídeo da aplicação
+# Vídeo da aplicação :link:
 
 
 
