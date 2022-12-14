@@ -16,7 +16,7 @@ Uma pessoa estudante deve poder tamb√©m publicar posts em seu perfil, que poder√
 
 # Tecnologias Utilizadas :hammer_and_wrench:
 
-1. C#, MySql e Azure;
+1. C#, .NET, MySql, Azure,Entity Framework, Swagger.
 
 # Resultado :trophy:
 ![projetoFINAL](https://user-images.githubusercontent.com/88983638/207453299-2777d8df-ef67-4e29-80d8-94fdffc2b6b1.png)
