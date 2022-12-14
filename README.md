@@ -22,17 +22,21 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 # Primeiros Passos
 
 1. Registro
+
 ![registro3](https://user-images.githubusercontent.com/88983638/207468843-696059a3-83a4-4887-a829-ea9703b2d3a5.png)
 
 2. Login
+
 ![registro2](https://user-images.githubusercontent.com/88983638/207469102-75f6758a-9f9c-48b4-850a-30d1b3e13326.png)
 ![token](https://user-images.githubusercontent.com/88983638/207469225-5f826166-649c-48af-a206-f2f853b28402.png)
 
 3. Autenticação (AUTHORIZE)
-4. 
+
 ![baerer](https://user-images.githubusercontent.com/88983638/207469498-30163cec-0cf4-43bf-b85e-e797b1457f5c.png)
 
+# Testes
 
+Utilização dos frameworks xUnit e FluentAssertions para criação dos testes
 
 
 
