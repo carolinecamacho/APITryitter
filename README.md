@@ -44,6 +44,8 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 
 # Vídeo da aplicação :link:
 
+[Vídeo Swagger](https://drive.google.com/file/d/1HWdknbJkbr5cebSzt0rMNb_g7I7mu1On/view?usp=sharing)
+
 
 
 
