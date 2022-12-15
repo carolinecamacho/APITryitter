@@ -23,6 +23,13 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 
 # Primeiros Passos :globe_with_meridians:
 
+1. Clone o repositório
+2. Entre na pasta do projeto
+3. Coloque a ConnectionString com usuário e senha do mysql
+4. Coloque o comando dotnet build
+5. Com o comando dotnet ef database update, suba as migrations para o banco de dados
+6. Rode dotnet run para inicializar o projeto
+
 # 1. Registro
 
 ![registro3](https://user-images.githubusercontent.com/88983638/207468843-696059a3-83a4-4887-a829-ea9703b2d3a5.png)
@@ -43,8 +50,6 @@ Uma pessoa estudante deve poder também publicar posts em seu perfil, que poder�
 ![testees](https://user-images.githubusercontent.com/88983638/207482456-6118cd1e-f017-485d-bc57-dfa68a89afdc.png)
 
 # Vídeo da aplicação :link:
-
-[Vídeo Swagger](https://drive.google.com/file/d/1HWdknbJkbr5cebSzt0rMNb_g7I7mu1On/view?usp=sharing)
 
 
 
