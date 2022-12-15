@@ -25,12 +25,12 @@ namespace APITryitter.Controllers
         }
 
         [HttpGet("posts")]
-        public async Task<ActionResult<IEnumerable<StudentDTO>>> GetStudentsPosts()
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsPosts()
         {
             var students = await _context.StudentRepository
                             .GetStudentsPosts();
 
-            var studentsDto = _mapper.Map<List<StudentDTO>>(students);
+            var studentsDto = _mapper.Map<List<Student>>(students);
             return studentsDto;
         }
 
